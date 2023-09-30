@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: black;
+  color:white;
+}
+footer a:hover{
+color:green;
+
+}
+//
