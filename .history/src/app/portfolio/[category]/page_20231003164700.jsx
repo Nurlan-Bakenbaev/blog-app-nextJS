@@ -31,7 +31,7 @@ const Category = ({ params }) => {
           </p>
           <button className="hover:bg-blue-400 px-4 py-2 mt-5 bg-green-500 rounded-lg  ">See More</button>
         </div> 
-        <div className="group">
+        <div>
             <Image width={850} height={550} src='https://images.unsplash.com/photo-1605379399642-870262d3d051?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3006&q=80' />
         </div>
       </div>
