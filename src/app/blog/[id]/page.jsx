@@ -2,7 +2,8 @@ import React from "react";
 import Image from "next/image";
 
 async function getData(id) {
-  const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
+  const res = await fetch(`
+  http://localhost:3000/api/posts/${id}`);
   if (!res.ok) {
     throw new Error("Failed to fetch data");
   }
@@ -11,7 +12,7 @@ async function getData(id) {
 }
 const BlogPost = async ({ params }) => {
   const data = await getData(params.id);
-  console.log(data);
+
   return (
     <div className="mt-10">
       <div className="flex items-center justify-between">
@@ -40,22 +41,6 @@ const BlogPost = async ({ params }) => {
         </div>
       </div>
       <div className=" mt-10 mb-10 flex flex-col gap-8">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, iure
-          sequi esse placeat deserunt nulla asperiores aliquid aliquam,
-          reprehenderit ipsa dolorum dolorem neque assumenda voluptatibus nisi
-          blanditiis omnis impedit voluptatum. Placeat, modi maiores. Recusandae
-          corrupti asperiores ipsa eligendi vero nobis modi facere, enim quos
-          veniam rerum tenetur? Illum, debitis nesciunt!
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, iure
-          sequi esse placeat deserunt nulla asperiores aliquid aliquam,
-          reprehenderit ipsa dolorum dolorem neque assumenda voluptatibus nisi
-          blanditiis omnis impedit voluptatum. Placeat, modi maiores. Recusandae
-          corrupti asperiores ipsa eligendi vero nobis modi facere, enim quos
-          veniam rerum tenetur? Illum, debitis nesciunt!
-        </p>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, iure
           sequi esse placeat deserunt nulla asperiores aliquid aliquam,

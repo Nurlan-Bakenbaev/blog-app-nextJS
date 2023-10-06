@@ -8,7 +8,7 @@ const BlogCard = ({ title, body,image }) => {
 
         <p>{body}</p>
       </div>
-      <div className="group mb-6">
+      <div className="group mb-6 rounded-md overflow-hidden">
         <Image
           width={250}
           height={150}
