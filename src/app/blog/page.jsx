@@ -2,6 +2,10 @@ import React from "react";
 import BlogCard from "@/components/blog/Blog";
 import Link from "next/link";
 
+export const metadata = {
+  title:"This is Blogs",
+  description:"Blog page description"
+}
 async function getData() {
   const res = await fetch("http://localhost:3000/api/posts");
   if (!res.ok) {
